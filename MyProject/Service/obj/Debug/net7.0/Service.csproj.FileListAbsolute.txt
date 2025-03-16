@@ -1,0 +1,17 @@
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Service.deps.json
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Service.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Service.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\Service.csproj.AssemblyReference.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\Service.AssemblyInfoInputs.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\Service.AssemblyInfo.cs
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\Service.csproj.CoreCompileInputs.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\Service.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\refint\Service.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\Service.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\ref\Service.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Common.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Repository.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Common.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Repository.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\Service.csproj.CopyComplete

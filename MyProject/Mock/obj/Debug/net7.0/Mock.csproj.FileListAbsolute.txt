@@ -1,0 +1,17 @@
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\bin\Debug\net7.0\Mock.deps.json
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\bin\Debug\net7.0\Mock.runtimeconfig.json
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\bin\Debug\net7.0\Mock.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\bin\Debug\net7.0\Mock.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\bin\Debug\net7.0\Repository.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\bin\Debug\net7.0\Repository.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.csproj.AssemblyReference.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.GeneratedMSBuildEditorConfig.editorconfig
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.AssemblyInfoInputs.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.AssemblyInfo.cs
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.csproj.CoreCompileInputs.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.csproj.CopyComplete
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\refint\Mock.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.genruntimeconfig.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\ref\Mock.dll

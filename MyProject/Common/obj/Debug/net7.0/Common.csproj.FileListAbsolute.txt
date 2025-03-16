@@ -1,0 +1,12 @@
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\bin\Debug\net7.0\Common.deps.json
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\bin\Debug\net7.0\Common.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\bin\Debug\net7.0\Common.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\Common.csproj.AssemblyReference.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\Common.AssemblyInfoInputs.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\Common.AssemblyInfo.cs
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\Common.csproj.CoreCompileInputs.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\Common.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\refint\Common.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\Common.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\ref\Common.dll

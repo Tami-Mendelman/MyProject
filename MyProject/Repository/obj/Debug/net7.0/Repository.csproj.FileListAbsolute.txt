@@ -1,0 +1,12 @@
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\bin\Debug\net7.0\Repository.deps.json
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\bin\Debug\net7.0\Repository.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\bin\Debug\net7.0\Repository.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\obj\Debug\net7.0\Repository.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\obj\Debug\net7.0\refint\Repository.dll
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\obj\Debug\net7.0\Repository.pdb
+L:\שנה ב\Full Stack\teacher\c#++\MyProject\Repository\obj\Debug\net7.0\ref\Repository.dll
