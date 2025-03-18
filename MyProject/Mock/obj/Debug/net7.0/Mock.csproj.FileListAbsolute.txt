@@ -15,3 +15,21 @@ L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\refint\Mock
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.pdb
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\Mock.genruntimeconfig.cache
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\Mock\obj\Debug\net7.0\ref\Mock.dll
+C:\git\MyProject\MyProject\Mock\bin\Debug\net7.0\Mock.deps.json
+C:\git\MyProject\MyProject\Mock\bin\Debug\net7.0\Mock.runtimeconfig.json
+C:\git\MyProject\MyProject\Mock\bin\Debug\net7.0\Mock.dll
+C:\git\MyProject\MyProject\Mock\bin\Debug\net7.0\Mock.pdb
+C:\git\MyProject\MyProject\Mock\bin\Debug\net7.0\Repository.dll
+C:\git\MyProject\MyProject\Mock\bin\Debug\net7.0\Repository.pdb
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.csproj.AssemblyReference.cache
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.AssemblyInfoInputs.cache
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.AssemblyInfo.cs
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.csproj.CoreCompileInputs.cache
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.sourcelink.json
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.csproj.Up2Date
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.dll
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\refint\Mock.dll
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.pdb
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\Mock.genruntimeconfig.cache
+C:\git\MyProject\MyProject\Mock\obj\Debug\net7.0\ref\Mock.dll

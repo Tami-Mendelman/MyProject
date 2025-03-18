@@ -27,8 +27,8 @@ namespace Mock
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //??? איך קוראים לDATABASE שאני רוצה הלתחבר אליהם
-            optionsBuilder.UseSqlServer("server=sql;database=projectShopDb;trusted_connection=true;TrustServerCertificate=True");
+            
+            optionsBuilder.UseSqlServer("server=DESKTOP-FVA15IL;database=MyProjectDb;trusted_connection=true;TrustServerCertificate=True");
         }
     }
 }

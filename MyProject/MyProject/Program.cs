@@ -1,10 +1,13 @@
 using Common.Dto;
 using Mock;
-using Repository.Entities;
+//using Repository.Entities;
 using Repository.Interfaces;
-using Repository.Repositories;
+using Repository.Repositor;
+//using Repository.Repositories;
+using Respository.Entities;
 using Service.Interfaces;
-using Service.Services;
+//using Service.Services;
+using Service.Servicess;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,8 +19,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //הגדרת התלויות
-builder.Services.AddScoped<IService<CategoryDto>, CategoryService>();
-builder.Services.AddScoped<IRepository<Category>, CategoryRepository>();
+builder.Services.AddScoped<IService<UserDto>, UserService>();
+builder.Services.AddScoped<IRepository<User>, UserRepository>();
 builder.Services.AddAutoMapper(typeof(MyMapper));
 builder.Services.AddDbContext<IContext, Database>();
 

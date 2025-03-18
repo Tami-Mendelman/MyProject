@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user1\\Desktop\\תמי\\לימודים\\כיתה יד\\c#++\\הפרויקטטטטטטטטטטטטט\\MyProject\\Repository\\Repository.csproj": {}
+    "C:\\git\\MyProject\\MyProject\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user1\\Desktop\\תמי\\לימודים\\כיתה יד\\c#++\\הפרויקטטטטטטטטטטטטט\\MyProject\\Repository\\Repository.csproj": {
+    "C:\\git\\MyProject\\MyProject\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\תמי\\לימודים\\כיתה יד\\c#++\\הפרויקטטטטטטטטטטטטט\\MyProject\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\git\\MyProject\\MyProject\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\user1\\Desktop\\תמי\\לימודים\\כיתה יד\\c#++\\הפרויקטטטטטטטטטטטטט\\MyProject\\Repository\\Repository.csproj",
+        "projectPath": "C:\\git\\MyProject\\MyProject\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\תמי\\לימודים\\כיתה יד\\c#++\\הפרויקטטטטטטטטטטטטט\\MyProject\\Repository\\obj\\",
+        "outputPath": "C:\\git\\MyProject\\MyProject\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,7 +51,19 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
             }

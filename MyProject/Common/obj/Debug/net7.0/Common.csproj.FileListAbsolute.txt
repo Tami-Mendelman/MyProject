@@ -10,3 +10,21 @@ L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\Common.dl
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\refint\Common.dll
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\Common.pdb
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\Common\obj\Debug\net7.0\ref\Common.dll
+C:\git\MyProject\MyProject\Common\bin\Debug\net7.0\Common.deps.json
+C:\git\MyProject\MyProject\Common\bin\Debug\net7.0\Common.runtimeconfig.json
+C:\git\MyProject\MyProject\Common\bin\Debug\net7.0\Common.dll
+C:\git\MyProject\MyProject\Common\bin\Debug\net7.0\Common.pdb
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.csproj.AssemblyReference.cache
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.AssemblyInfoInputs.cache
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.AssemblyInfo.cs
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.csproj.CoreCompileInputs.cache
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.sourcelink.json
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.dll
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\refint\Common.dll
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.pdb
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.genruntimeconfig.cache
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\ref\Common.dll
+C:\git\MyProject\MyProject\Common\bin\Debug\net7.0\Repository.dll
+C:\git\MyProject\MyProject\Common\bin\Debug\net7.0\Repository.pdb
+C:\git\MyProject\MyProject\Common\obj\Debug\net7.0\Common.csproj.Up2Date

@@ -85,3 +85,11 @@ L:\שנה ב\Full Stack\teacher\c#++\MyProject\MyProject\bin\Debug\net7.0\Common
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\MyProject\bin\Debug\net7.0\Repository.pdb
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\MyProject\bin\Debug\net7.0\Mock.dll
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\MyProject\bin\Debug\net7.0\Mock.pdb
+C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.csproj.AssemblyReference.cache
+C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.AssemblyInfoInputs.cache
+C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.AssemblyInfo.cs
+C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.csproj.CoreCompileInputs.cache
+C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.MvcApplicationPartsAssemblyInfo.cs
+C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.MvcApplicationPartsAssemblyInfo.cache
+C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.sourcelink.json

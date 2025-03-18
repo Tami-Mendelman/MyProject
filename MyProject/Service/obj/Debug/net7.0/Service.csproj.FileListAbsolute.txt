@@ -15,3 +15,23 @@ L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Reposito
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Common.pdb
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\bin\Debug\net7.0\Repository.pdb
 L:\שנה ב\Full Stack\teacher\c#++\MyProject\Service\obj\Debug\net7.0\Service.csproj.CopyComplete
+C:\git\MyProject\MyProject\Service\bin\Debug\net7.0\Service.deps.json
+C:\git\MyProject\MyProject\Service\bin\Debug\net7.0\Service.runtimeconfig.json
+C:\git\MyProject\MyProject\Service\bin\Debug\net7.0\Service.dll
+C:\git\MyProject\MyProject\Service\bin\Debug\net7.0\Service.pdb
+C:\git\MyProject\MyProject\Service\bin\Debug\net7.0\Common.dll
+C:\git\MyProject\MyProject\Service\bin\Debug\net7.0\Repository.dll
+C:\git\MyProject\MyProject\Service\bin\Debug\net7.0\Common.pdb
+C:\git\MyProject\MyProject\Service\bin\Debug\net7.0\Repository.pdb
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.csproj.AssemblyReference.cache
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.AssemblyInfoInputs.cache
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.AssemblyInfo.cs
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.csproj.CoreCompileInputs.cache
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.sourcelink.json
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.csproj.Up2Date
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.dll
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\refint\Service.dll
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.pdb
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\Service.genruntimeconfig.cache
+C:\git\MyProject\MyProject\Service\obj\Debug\net7.0\ref\Service.dll
