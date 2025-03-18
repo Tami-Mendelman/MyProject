@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\git\\MyProject\\MyProject\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\servicess\\driverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\servicess\\driverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DriverService.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\DriverService.cs",
+              "RelativeDocumentMoniker": "Service\\Servicess\\DriverService.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\DriverService.cs",
+              "RelativeToolTip": "Service\\Servicess\\DriverService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T17:01:41.381Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
