@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Respository.Entities
 {
-    
+     [NotMapped]
     public class Cordination
     {
          public long X { get; set; }

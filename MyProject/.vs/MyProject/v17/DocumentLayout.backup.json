@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\git\\MyProject\\MyProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\services\\driverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\services\\driverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC6EC498-8BDE-4A0B-A671-0A2489108394}|Mock\\Mock.csproj|c:\\git\\myproject\\myproject\\mock\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC6EC498-8BDE-4A0B-A671-0A2489108394}|Mock\\Mock.csproj|solutionrelative:mock\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\MyProject\\MyProject\\Mock\\Migrations\\20250319164811_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mock\\Migrations\\20250319164811_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|c:\\git\\myproject\\myproject\\repository\\entities\\cordination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|solutionrelative:repository\\entities\\cordination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\servicess\\driverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\servicess\\driverservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,12 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Mock\\Database.cs",
+              "RelativeDocumentMoniker": "Mock\\Database.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Mock\\Database.cs",
+              "RelativeToolTip": "Mock\\Database.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:48:38.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250319164811_init.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Mock\\Migrations\\20250319164811_init.cs",
+              "RelativeDocumentMoniker": "Mock\\Migrations\\20250319164811_init.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Mock\\Migrations\\20250319164811_init.cs",
+              "RelativeToolTip": "Mock\\Migrations\\20250319164811_init.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:48:11.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cordination.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Cordination.cs",
+              "RelativeDocumentMoniker": "Repository\\Entities\\Cordination.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Cordination.cs",
+              "RelativeToolTip": "Repository\\Entities\\Cordination.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:46:54.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DriverService.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Services\\DriverService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\DriverService.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Services\\DriverService.cs*",
-              "RelativeToolTip": "Service\\Services\\DriverService.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\DriverService.cs",
+              "RelativeDocumentMoniker": "Service\\Servicess\\DriverService.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\DriverService.cs",
+              "RelativeToolTip": "Service\\Servicess\\DriverService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T17:01:41.381Z",
               "EditorCaption": ""

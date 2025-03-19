@@ -28,7 +28,7 @@ namespace Mock
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             
-            optionsBuilder.UseSqlServer("server=DESKTOP-FVA15IL;database=MyProjectDb;trusted_connection=true;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("server=DESKTOP-FVA15IL;database=ProjectTandT;trusted_connection=true;TrustServerCertificate=True");
         }
     }
 }
