@@ -21,9 +21,9 @@ namespace Respository.Entities
         public bool Trunk { get; set; }
         public int NumberOfSeatsInTheCar { get; set; }
         //תמונת פרופיל
-        public string Image { get; set; }
+        public string? Image { get; set; }
 
-        public ICollection<Timetable> timetables { get; set; }
+        public ICollection<Timetable>? timetables { get; set; }
         
     }
 }

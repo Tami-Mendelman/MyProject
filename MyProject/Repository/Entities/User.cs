@@ -15,8 +15,8 @@ namespace Respository.Entities
         public string Password { get; set; }
         public string Role { get; set; }
         public string Mail { get; set; }
-        public string Image { get; set; }
-        public ICollection<Destination> Destination { get; set; }
+        public string? Image { get; set; }
+        public ICollection<Destination>? Destination { get; set; }
 
 
     }
