@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\git\\MyProject\\MyProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|solutionrelative:myproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\servicess\\mymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\servicess\\mymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|c:\\git\\myproject\\myproject\\repository\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|solutionrelative:repository\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\servicess\\extentionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\servicess\\extentionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\MyProject\\MyProject\\Mock\\Migrations\\20250326152246_UpdateDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mock\\Migrations\\20250326152246_UpdateDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\interfaces\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\interfaces\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|c:\\git\\myproject\\myproject\\repository\\entities\\drivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|solutionrelative:repository\\entities\\drivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Class1.cs",
-              "RelativeDocumentMoniker": "Service\\Class1.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Class1.cs",
-              "RelativeToolTip": "Service\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Program.cs",
+              "RelativeDocumentMoniker": "MyProject\\Program.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Program.cs",
+              "RelativeToolTip": "MyProject\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:45:26.462Z",
+              "WhenOpened": "2025-03-26T15:25:11.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ExtentionService.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\ExtentionService.cs",
-              "RelativeDocumentMoniker": "Service\\Servicess\\ExtentionService.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\ExtentionService.cs",
-              "RelativeToolTip": "Service\\Servicess\\ExtentionService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20250326152246_UpdateDatabase.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Mock\\Migrations\\20250326152246_UpdateDatabase.cs",
+              "RelativeDocumentMoniker": "Mock\\Migrations\\20250326152246_UpdateDatabase.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Mock\\Migrations\\20250326152246_UpdateDatabase.cs",
+              "RelativeToolTip": "Mock\\Migrations\\20250326152246_UpdateDatabase.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:41:52.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MyMapper.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\MyMapper.cs",
-              "RelativeDocumentMoniker": "Service\\Servicess\\MyMapper.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\MyMapper.cs",
-              "RelativeToolTip": "Service\\Servicess\\MyMapper.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:41:41.491Z",
+              "WhenOpened": "2025-03-26T15:22:46.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IService.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Interfaces\\IService.cs",
-              "RelativeDocumentMoniker": "Service\\Interfaces\\IService.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Interfaces\\IService.cs",
-              "RelativeToolTip": "Service\\Interfaces\\IService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Drivers.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Drivers.cs",
+              "RelativeDocumentMoniker": "Repository\\Entities\\Drivers.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Drivers.cs",
+              "RelativeToolTip": "Repository\\Entities\\Drivers.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:41:32.29Z",
+              "WhenOpened": "2025-03-26T15:22:24.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Repository\\Entities\\User.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\User.cs",
+              "RelativeToolTip": "Repository\\Entities\\User.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:20:08.398Z",
               "EditorCaption": ""
             }
           ]
