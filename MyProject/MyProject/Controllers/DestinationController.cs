@@ -1,4 +1,5 @@
 ﻿using Common.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Respository.Entities;
 using Service.Interfaces;
@@ -32,6 +33,7 @@ namespace MyProject.Controllers
 
         // POST api/<DestinationController>
         [HttpPost]
+        [Authorize]
         public DestinationDto Post([FromBody] DestinationDto value)
         {
             return service.AddItem(value);

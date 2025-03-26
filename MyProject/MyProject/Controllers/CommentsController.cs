@@ -1,4 +1,5 @@
 ﻿using Common.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces;
 
@@ -31,6 +32,7 @@ namespace MyProject.Controllers
 
         // POST api/<CommentsController>
         [HttpPost]
+        [Authorize]
         public CommentsDto Post([FromBody] CommentsDto value)
         {
             return service.AddItem(value);

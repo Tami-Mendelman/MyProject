@@ -182,3 +182,6 @@ C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\refint\MyProject.dll
 C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.pdb
 C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\MyProject.genruntimeconfig.cache
 C:\git\MyProject\MyProject\MyProject\obj\Debug\net7.0\ref\MyProject.dll
+C:\git\MyProject\MyProject\MyProject\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\git\MyProject\MyProject\MyProject\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\git\MyProject\MyProject\MyProject\bin\Debug\net7.0\Microsoft.IdentityModel.Xml.dll
