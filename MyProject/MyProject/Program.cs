@@ -1,4 +1,4 @@
-using Common.Dto;
+﻿using Common.Dto;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -45,7 +45,7 @@ builder.Services.AddSwaggerGen(option =>
         }
     });
 });
-//����� �������
+//הגדרת התלויות
 //builder.Services.AddScoped<IService<UserDto>, UserService>();
 //builder.Services.AddScoped<IRepository<User>, UserRepository>();
 //builder.Services.AddAutoMapper(typeof(MyMapper));
@@ -86,6 +86,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//GPT אמר לי להוסיף לבדוק
+//app.UseCors("_myAllowSpecificOrigins"); // ← חובה שיהיה לפני Authorization
+
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
