@@ -18,11 +18,13 @@ namespace MyProject.Controllers
             this.service = service;
         }
         // GET: api/<DestinationController>
+      
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<DestinationDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            return service.GetAll();
         }
+
 
         // GET api/<DestinationController>/5
         [HttpGet("{id}")]

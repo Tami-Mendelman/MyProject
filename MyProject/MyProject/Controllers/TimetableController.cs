@@ -18,10 +18,11 @@ namespace MyProject.Controllers
         }
         // GET: api/<TimetableController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<TimetableDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            return service.GetAll();
         }
+
 
         // GET api/<TimetableController>/5
         [HttpGet("{id}")]
@@ -33,14 +34,14 @@ namespace MyProject.Controllers
         // POST api/<TimetableController>
         [HttpPost]
         [Authorize]
-        public TimetableDto Post([FromBody] TimetableDto value)
+        public TimetableDto Post([FromForm] TimetableDto value)
         {
             return service.AddItem(value);
         }
 
         // PUT api/<TimetableController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromForm] string value)
         {
         }
 

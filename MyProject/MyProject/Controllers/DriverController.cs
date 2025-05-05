@@ -17,9 +17,9 @@ namespace MyProject.Controllers
         }
         // GET: api/<DriverController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<DriversDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            return service.GetAll();
         }
 
         // GET api/<DriverController>/5
@@ -31,7 +31,7 @@ namespace MyProject.Controllers
 
         // POST api/<DriverController>
         [HttpPost]
-        public DriversDto Post([FromBody] DriversDto drivers)
+        public DriversDto Post([FromForm] DriversDto drivers)
         {
             UploadImage(drivers.fileImage);
             return service.AddItem(drivers);
@@ -39,7 +39,7 @@ namespace MyProject.Controllers
 
         // PUT api/<DriverController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromForm] string value)
         {
         }
 
