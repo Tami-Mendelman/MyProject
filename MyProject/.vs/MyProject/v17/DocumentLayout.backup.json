@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\git\\MyProject\\MyProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\servicess\\mymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\servicess\\mymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,7 +85,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -148,12 +148,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\LoginController.cs*",
-              "RelativeToolTip": "MyProject\\Controllers\\LoginController.cs*",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "MyProject\\Controllers\\LoginController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwBgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T17:40:26.238Z",
@@ -187,13 +187,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MyMapper.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\MyMapper.cs",
               "RelativeDocumentMoniker": "Service\\Servicess\\MyMapper.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\MyMapper.cs",
-              "RelativeToolTip": "Service\\Servicess\\MyMapper.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAUwCIAAAA1AAAAAAAAAA==",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\MyMapper.cs*",
+              "RelativeToolTip": "Service\\Servicess\\MyMapper.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwCUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T17:01:47.048Z",
               "EditorCaption": ""
