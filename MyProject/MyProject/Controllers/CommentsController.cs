@@ -34,14 +34,14 @@ namespace MyProject.Controllers
         // POST api/<CommentsController>
         [HttpPost]
         [Authorize]
-        public CommentsDto Post([FromBody] CommentsDto value)
+        public CommentsDto Post([FromForm] CommentsDto value)
         {
             return service.AddItem(value);
         }
 
         // PUT api/<CommentsController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromForm] string value)
         {
         }
 

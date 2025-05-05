@@ -48,19 +48,42 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/CommentsDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CommentsDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CommentsDto"
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DriversList": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/DriversDto"
+                    }
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "UserId": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "DriversList": {
+                  "style": "form"
+                },
+                "Description": {
+                  "style": "form"
+                },
+                "UserId": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -147,19 +170,19 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "value": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -236,19 +259,68 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/DestinationDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DestinationDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/DestinationDto"
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "UserCode": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Source.X": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Source.Y": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Destinations.X": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Destinations.Y": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Date": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Time": {
+                    "$ref": "#/components/schemas/TimeSpan"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "UserCode": {
+                  "style": "form"
+                },
+                "Source.X": {
+                  "style": "form"
+                },
+                "Source.Y": {
+                  "style": "form"
+                },
+                "Destinations.X": {
+                  "style": "form"
+                },
+                "Destinations.Y": {
+                  "style": "form"
+                },
+                "Date": {
+                  "style": "form"
+                },
+                "Time": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -335,19 +407,19 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "value": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -634,7 +706,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/UserDto"
                   }
                 }
               },
@@ -642,7 +714,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/UserDto"
                   }
                 }
               },
@@ -650,7 +722,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/UserDto"
                   }
                 }
               }
@@ -928,19 +1000,81 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/TimetableDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TimetableDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/TimetableDto"
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DriverCode": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Date": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "FromHour": {
+                    "$ref": "#/components/schemas/TimeSpan"
+                  },
+                  "UntilHour": {
+                    "$ref": "#/components/schemas/TimeSpan"
+                  },
+                  "Source.X": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Source.Y": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Destination.X": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Destination.Y": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Km": {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "DriverCode": {
+                  "style": "form"
+                },
+                "Date": {
+                  "style": "form"
+                },
+                "FromHour": {
+                  "style": "form"
+                },
+                "UntilHour": {
+                  "style": "form"
+                },
+                "Source.X": {
+                  "style": "form"
+                },
+                "Source.Y": {
+                  "style": "form"
+                },
+                "Destination.X": {
+                  "style": "form"
+                },
+                "Destination.Y": {
+                  "style": "form"
+                },
+                "Km": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -1027,19 +1161,19 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "value": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -1254,19 +1388,19 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "value": {
+                  "style": "form"
+                }
               }
             }
           }

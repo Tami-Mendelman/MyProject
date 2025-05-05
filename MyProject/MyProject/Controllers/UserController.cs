@@ -44,7 +44,7 @@ namespace MyProject.Controllers
 
         // PUT api/<UserController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromForm] string value)
         {
         }
 

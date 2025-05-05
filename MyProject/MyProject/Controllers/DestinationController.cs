@@ -36,14 +36,14 @@ namespace MyProject.Controllers
         // POST api/<DestinationController>
         [HttpPost]
         [Authorize]
-        public DestinationDto Post([FromBody] DestinationDto value)
+        public DestinationDto Post([FromForm] DestinationDto value)
         {
             return service.AddItem(value);
         }
 
         // PUT api/<DestinationController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromForm] string value)
         {
         }
 

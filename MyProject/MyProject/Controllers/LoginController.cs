@@ -22,11 +22,13 @@ namespace MyProject.Controllers
             this.config = config;
         }
         // GET: api/<LoginController>
+       
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<UserDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            return service.GetAll();
         }
+
 
         // GET api/<LoginController>/5
         [HttpGet("{id}")]

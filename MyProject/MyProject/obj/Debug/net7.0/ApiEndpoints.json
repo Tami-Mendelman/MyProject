@@ -28,9 +28,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "Common.Dto.CommentsDto",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DriversList",
+        "Type": "System.Collections.Generic.List\u00601[[Common.Dto.DriversDto, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -87,7 +102,7 @@
       {
         "Name": "value",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -149,9 +164,44 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "Common.Dto.DestinationDto",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserCode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source.X",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source.Y",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Destinations.X",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Destinations.Y",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Time",
+        "Type": "System.TimeSpan",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -208,7 +258,7 @@
       {
         "Name": "value",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -412,7 +462,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Common.Dto.UserDto, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -609,9 +659,54 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "Common.Dto.TimetableDto",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DriverCode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FromHour",
+        "Type": "System.TimeSpan",
+        "IsRequired": false
+      },
+      {
+        "Name": "UntilHour",
+        "Type": "System.TimeSpan",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source.X",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source.Y",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Destination.X",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Destination.Y",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Km",
+        "Type": "System.Int64",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -668,7 +763,7 @@
       {
         "Name": "value",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -819,7 +914,7 @@
       {
         "Name": "value",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

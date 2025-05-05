@@ -29,6 +29,14 @@ namespace Service.Servicess
 
             CreateMap<DriversDto, Drivers>()
                 .ForMember(dest => dest.Image, opt => opt.Ignore()); // שמירה ידנית
+            CreateMap<Comments, CommentsDto>();
+            CreateMap<CommentsDto, Comments>();
+            CreateMap<Destination, DestinationDto>();
+            CreateMap<DestinationDto, Destination>();
+
+            CreateMap<Timetable, TimetableDto>();
+            CreateMap<TimetableDto, Timetable>();
+
         }
     }
 }
