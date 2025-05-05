@@ -22,8 +22,17 @@ namespace Mock
 
         public void Save()
         {
-           SaveChanges();
+            try
+            {
+                SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("שגיאה בשמירה: " + ex.Message);
+                throw;
+            }
         }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -21,10 +21,33 @@ namespace Service.Servicess
             this.mapper = mapper;
         }
 
+        //public UserDto AddItem(UserDto item)
+        //{
+        //        return mapper.Map<User, UserDto>(repository.AddItem(mapper.Map<UserDto, User>(item)));
+        //}
         public UserDto AddItem(UserDto item)
         {
-                return mapper.Map<User, UserDto>(repository.AddItem(mapper.Map<UserDto, User>(item)));
+            var user = mapper.Map<UserDto, User>(item);
+
+            // יצירת תיקיית Images אם לא קיימת
+            string imagePath = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+            if (!Directory.Exists(imagePath))
+                Directory.CreateDirectory(imagePath);
+
+            // שמירת התמונה אם קיימת
+            if (item.ArrImage != null)
+            {
+                string fileName = $"user_{Guid.NewGuid()}.jpg";
+                string fullPath = Path.Combine(imagePath, fileName);
+                File.WriteAllBytes(fullPath, item.ArrImage);
+
+                user.Image = fileName; // שמירה לשם התמונה
+            }
+
+            var added = repository.AddItem(user);
+            return mapper.Map<User, UserDto>(added);
         }
+
 
         public void DeleteItem(int id)
         {

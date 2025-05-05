@@ -13,11 +13,9 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-//Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 builder.Services.AddSwaggerGen(option =>
 {
     option.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
@@ -45,29 +43,30 @@ builder.Services.AddSwaggerGen(option =>
         }
     });
 });
-//הגדרת התלויות
-//builder.Services.AddScoped<IService<UserDto>, UserService>();
-//builder.Services.AddScoped<IRepository<User>, UserRepository>();
-//builder.Services.AddAutoMapper(typeof(MyMapper));
 
+// שירותים ו־DbContext
 builder.Services.AddServices();
 builder.Services.AddDbContext<IContext, Database>();
+
+// Authentication עם JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-              .AddJwtBearer(option =>
-              option.TokenValidationParameters = new TokenValidationParameters
-              {
-                  ValidateIssuer = true,
-                  ValidateAudience = true,
-                  ValidateLifetime = true,
-                  ValidateIssuerSigningKey = true,
-                  ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                  ValidAudience = builder.Configuration["Jwt:Audience"],
-                  IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    .AddJwtBearer(option =>
+    {
+        option.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
 
-              });
-// enable cors
+// CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
@@ -77,30 +76,19 @@ builder.Services.AddCors(options =>
                       });
 });
 
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// Always show Swagger
+app.UseSwagger();
+app.UseSwaggerUI();
 
-//GPT אמר לי להוסיף לבדוק
-//app.UseCors("_myAllowSpecificOrigins"); // ← חובה שיהיה לפני Authorization
+// חשוב מאוד – לפני Authorization
+app.UseCors(MyAllowSpecificOrigins);
 
-
+// Authentication + Authorization
 app.UseHttpsRedirection();
+app.UseAuthentication(); // ← חובה אם יש JWT
 app.UseAuthorization();
+
 app.MapControllers();
 app.Run();
-
-
-
-
-
-
-
-
-
