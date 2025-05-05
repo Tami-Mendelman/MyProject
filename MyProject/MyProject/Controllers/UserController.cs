@@ -18,11 +18,13 @@ namespace MyProject.Controllers
         }
 
         // GET: api/<UserController>
+       
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<UserDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            return service.GetAll();
         }
+
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]

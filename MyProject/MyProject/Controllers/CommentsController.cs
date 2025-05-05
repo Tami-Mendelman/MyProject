@@ -16,12 +16,13 @@ namespace MyProject.Controllers
         {
             this.service = service;
         }
-        // GET: api/<CommentsController>
+        // GET: api/<CommentsController>   
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<CommentsDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            return service.GetAll();
         }
+
 
         // GET api/<CommentsController>/5
         [HttpGet("{id}")]
