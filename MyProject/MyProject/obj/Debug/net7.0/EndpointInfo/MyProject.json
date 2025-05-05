@@ -612,19 +612,58 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/UserDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserDto"
+                "type": "object",
+                "properties": {
+                  "CodeUser": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  },
+                  "Role": {
+                    "type": "string"
+                  },
+                  "Mail": {
+                    "type": "string"
+                  },
+                  "ArrImage": {
+                    "type": "string",
+                    "format": "byte"
+                  },
+                  "fileImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "CodeUser": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "Role": {
+                  "style": "form"
+                },
+                "Mail": {
+                  "style": "form"
+                },
+                "ArrImage": {
+                  "style": "form"
+                },
+                "fileImage": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -694,19 +733,19 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "type": "string"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "string"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "value": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -747,19 +786,25 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/UserLogin"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLogin"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLogin"
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -1019,19 +1064,58 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/UserDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserDto"
+                "type": "object",
+                "properties": {
+                  "CodeUser": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  },
+                  "Role": {
+                    "type": "string"
+                  },
+                  "Mail": {
+                    "type": "string"
+                  },
+                  "ArrImage": {
+                    "type": "string",
+                    "format": "byte"
+                  },
+                  "fileImage": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "CodeUser": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "Role": {
+                  "style": "form"
+                },
+                "Mail": {
+                  "style": "form"
+                },
+                "ArrImage": {
+                  "style": "form"
+                },
+                "fileImage": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -1420,20 +1504,6 @@
           "fileImage": {
             "type": "string",
             "format": "binary",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UserLogin": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
             "nullable": true
           }
         },

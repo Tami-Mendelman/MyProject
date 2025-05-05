@@ -37,12 +37,12 @@ namespace MyProject.Controllers
 
         // POST api/<LoginController>
         [HttpPost]
-        public void Post([FromBody]UserDto value)
+        public void Post([FromForm] UserDto value)
         {
             service.AddItem(value);
         }
         [HttpPost("login")]
-        public string Login([FromBody] UserLogin value)
+        public string Login([FromForm] UserLogin value)
         {
             var user = Authenticate(value);
             if (user != null)
@@ -81,7 +81,7 @@ namespace MyProject.Controllers
 
         // PUT api/<LoginController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromForm] string value)
         {
         }
 

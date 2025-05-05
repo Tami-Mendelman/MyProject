@@ -18,7 +18,7 @@ namespace Common.Dto
         public string Role { get; set; }
         public string Mail { get; set; }
 
-        public byte[] ArrImage { get; set; }
+        public byte[]? ArrImage { get; set; }
         public IFormFile? fileImage { get; set; }
 
     }

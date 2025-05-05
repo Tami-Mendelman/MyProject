@@ -391,9 +391,39 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "Common.Dto.UserDto",
-        "IsRequired": true
+        "Name": "CodeUser",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArrImage",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fileImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -446,7 +476,7 @@
       {
         "Name": "value",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -488,9 +518,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "value",
-        "Type": "Common.Dto.UserLogin",
-        "IsRequired": true
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -655,9 +690,39 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "Common.Dto.UserDto",
-        "IsRequired": true
+        "Name": "CodeUser",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArrImage",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fileImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

@@ -33,7 +33,7 @@ namespace MyProject.Controllers
 
         // POST api/<UserController>
         [HttpPost]
-        public UserDto Post([FromBody] UserDto user)
+        public UserDto Post([FromForm] UserDto user)
         {
             UploadImage(user.fileImage);
 
