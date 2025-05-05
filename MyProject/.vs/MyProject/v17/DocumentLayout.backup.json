@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\git\\MyProject\\MyProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9228CC6C-D8C3-4B0E-A568-0F1A59655250}|Common\\Common.csproj|c:\\git\\myproject\\myproject\\common\\dto\\driversdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9228CC6C-D8C3-4B0E-A568-0F1A59655250}|Common\\Common.csproj|solutionrelative:common\\dto\\driversdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|c:\\git\\myproject\\myproject\\repository\\entities\\drivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|solutionrelative:repository\\entities\\drivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9228CC6C-D8C3-4B0E-A568-0F1A59655250}|Common\\Common.csproj|c:\\git\\myproject\\myproject\\common\\dto\\destinationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9228CC6C-D8C3-4B0E-A568-0F1A59655250}|Common\\Common.csproj|solutionrelative:common\\dto\\destinationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,6 +75,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DriversDto.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Common\\Dto\\DriversDto.cs",
+              "RelativeDocumentMoniker": "Common\\Dto\\DriversDto.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Common\\Dto\\DriversDto.cs*",
+              "RelativeToolTip": "Common\\Dto\\DriversDto.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:28:53.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Drivers.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Drivers.cs",
+              "RelativeDocumentMoniker": "Repository\\Entities\\Drivers.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Drivers.cs",
+              "RelativeToolTip": "Repository\\Entities\\Drivers.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:28:37.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DestinationDto.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Common\\Dto\\DestinationDto.cs",
               "RelativeDocumentMoniker": "Common\\Dto\\DestinationDto.cs",
@@ -78,12 +116,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Comments.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Comments.cs",
               "RelativeDocumentMoniker": "Repository\\Entities\\Comments.cs",
@@ -96,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\LoginController.cs",
@@ -109,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DestinationController.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\DestinationController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\DestinationController.cs",
@@ -122,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CommentsController.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\CommentsController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\CommentsController.cs",
@@ -135,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DriverController.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\DriverController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\DriverController.cs",
@@ -148,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TimetableController.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\TimetableController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\TimetableController.cs",
@@ -161,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\UserController.cs",
