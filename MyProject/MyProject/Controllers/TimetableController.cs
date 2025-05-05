@@ -41,14 +41,27 @@ namespace MyProject.Controllers
 
         // PUT api/<TimetableController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromForm] string value)
+        public void Put(int id, [FromForm] TimetableDto dto)
         {
+            service.UpdateItem(id, dto);
         }
 
         // DELETE api/<TimetableController>/5
+       
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            var entity = service.GetById(id);
+            if (entity == null)
+                return NotFound();
+
+            service.DeleteItem(id);
+            return Ok();
         }
+
+
+
+
+
     }
 }

@@ -100,8 +100,23 @@
         "IsRequired": true
       },
       {
-        "Name": "value",
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DriversList",
+        "Type": "System.Collections.Generic.List\u00601[[Common.Dto.DriversDto, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -256,8 +271,43 @@
         "IsRequired": true
       },
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserCode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source.X",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source.Y",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Destinations.X",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Destinations.Y",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Time",
+        "Type": "System.TimeSpan",
         "IsRequired": false
       }
     ],
@@ -417,8 +467,48 @@
         "IsRequired": true
       },
       {
-        "Name": "value",
+        "Name": "DriverCode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Accessible",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Trunk",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "NumberOfSeatsInTheCar",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArrImage",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fileImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
     ],
@@ -564,8 +654,38 @@
         "IsRequired": true
       },
       {
-        "Name": "value",
+        "Name": "CodeUser",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArrImage",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fileImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
     ],
@@ -761,8 +881,53 @@
         "IsRequired": true
       },
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DriverCode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FromHour",
+        "Type": "System.TimeSpan",
+        "IsRequired": false
+      },
+      {
+        "Name": "UntilHour",
+        "Type": "System.TimeSpan",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source.X",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source.Y",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Destination.X",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Destination.Y",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Km",
+        "Type": "System.Int64",
         "IsRequired": false
       }
     ],
@@ -788,13 +953,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "MyProject.Controllers.UserController",
@@ -912,8 +1071,38 @@
         "IsRequired": true
       },
       {
-        "Name": "value",
+        "Name": "CodeUser",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArrImage",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fileImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
     ],

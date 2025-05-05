@@ -38,16 +38,21 @@ namespace MyProject.Controllers
         }
 
         // PUT api/<DriverController>/5
+
         [HttpPut("{id}")]
-        public void Put(int id, [FromForm] string value)
+        public void Put(int id, [FromForm] DriversDto dto)
         {
+            service.UpdateItem(id, dto);
         }
 
         // DELETE api/<DriverController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            service.DeleteItem(id);
         }
+
+        
         private void UploadImage(IFormFile file)
         {
             //ניתוב לתמונה

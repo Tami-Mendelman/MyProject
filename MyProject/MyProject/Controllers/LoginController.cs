@@ -83,14 +83,20 @@ namespace MyProject.Controllers
 
         // PUT api/<LoginController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromForm] string value)
+        public void Put(int id, [FromForm] UserDto dto)
         {
+           
+            service.UpdateItem(id,dto);
         }
-
         // DELETE api/<LoginController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            service.DeleteItem(id);
         }
+
+
+       
+       
     }
 }

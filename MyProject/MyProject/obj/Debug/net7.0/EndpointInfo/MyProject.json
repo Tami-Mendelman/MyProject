@@ -174,13 +174,36 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "value": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DriversList": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/DriversDto"
+                    }
+                  },
+                  "Description": {
                     "type": "string"
+                  },
+                  "UserId": {
+                    "type": "integer",
+                    "format": "int32"
                   }
                 }
               },
               "encoding": {
-                "value": {
+                "Id": {
+                  "style": "form"
+                },
+                "DriversList": {
+                  "style": "form"
+                },
+                "Description": {
+                  "style": "form"
+                },
+                "UserId": {
                   "style": "form"
                 }
               }
@@ -411,13 +434,62 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "value": {
-                    "type": "string"
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "UserCode": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Source.X": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Source.Y": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Destinations.X": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Destinations.Y": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Date": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Time": {
+                    "$ref": "#/components/schemas/TimeSpan"
                   }
                 }
               },
               "encoding": {
-                "value": {
+                "Id": {
+                  "style": "form"
+                },
+                "UserCode": {
+                  "style": "form"
+                },
+                "Source.X": {
+                  "style": "form"
+                },
+                "Source.Y": {
+                  "style": "form"
+                },
+                "Destinations.X": {
+                  "style": "form"
+                },
+                "Destinations.Y": {
+                  "style": "form"
+                },
+                "Date": {
+                  "style": "form"
+                },
+                "Time": {
                   "style": "form"
                 }
               }
@@ -651,13 +723,65 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "value": {
+                  "DriverCode": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Name": {
                     "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  },
+                  "Mail": {
+                    "type": "string"
+                  },
+                  "Accessible": {
+                    "type": "boolean"
+                  },
+                  "Trunk": {
+                    "type": "boolean"
+                  },
+                  "NumberOfSeatsInTheCar": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ArrImage": {
+                    "type": "string",
+                    "format": "byte"
+                  },
+                  "fileImage": {
+                    "type": "string",
+                    "format": "binary"
                   }
                 }
               },
               "encoding": {
-                "value": {
+                "DriverCode": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "Mail": {
+                  "style": "form"
+                },
+                "Accessible": {
+                  "style": "form"
+                },
+                "Trunk": {
+                  "style": "form"
+                },
+                "NumberOfSeatsInTheCar": {
+                  "style": "form"
+                },
+                "ArrImage": {
+                  "style": "form"
+                },
+                "fileImage": {
                   "style": "form"
                 }
               }
@@ -861,13 +985,52 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "value": {
+                  "CodeUser": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Name": {
                     "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  },
+                  "Role": {
+                    "type": "string"
+                  },
+                  "Mail": {
+                    "type": "string"
+                  },
+                  "ArrImage": {
+                    "type": "string",
+                    "format": "byte"
+                  },
+                  "fileImage": {
+                    "type": "string",
+                    "format": "binary"
                   }
                 }
               },
               "encoding": {
-                "value": {
+                "CodeUser": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "Role": {
+                  "style": "form"
+                },
+                "Mail": {
+                  "style": "form"
+                },
+                "ArrImage": {
+                  "style": "form"
+                },
+                "fileImage": {
                   "style": "form"
                 }
               }
@@ -1165,13 +1328,75 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "value": {
-                    "type": "string"
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DriverCode": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Date": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "FromHour": {
+                    "$ref": "#/components/schemas/TimeSpan"
+                  },
+                  "UntilHour": {
+                    "$ref": "#/components/schemas/TimeSpan"
+                  },
+                  "Source.X": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Source.Y": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Destination.X": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Destination.Y": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Km": {
+                    "type": "integer",
+                    "format": "int64"
                   }
                 }
               },
               "encoding": {
-                "value": {
+                "Id": {
+                  "style": "form"
+                },
+                "DriverCode": {
+                  "style": "form"
+                },
+                "Date": {
+                  "style": "form"
+                },
+                "FromHour": {
+                  "style": "form"
+                },
+                "UntilHour": {
+                  "style": "form"
+                },
+                "Source.X": {
+                  "style": "form"
+                },
+                "Source.Y": {
+                  "style": "form"
+                },
+                "Destination.X": {
+                  "style": "form"
+                },
+                "Destination.Y": {
+                  "style": "form"
+                },
+                "Km": {
                   "style": "form"
                 }
               }
@@ -1392,13 +1617,52 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "value": {
+                  "CodeUser": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Name": {
                     "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  },
+                  "Role": {
+                    "type": "string"
+                  },
+                  "Mail": {
+                    "type": "string"
+                  },
+                  "ArrImage": {
+                    "type": "string",
+                    "format": "byte"
+                  },
+                  "fileImage": {
+                    "type": "string",
+                    "format": "binary"
                   }
                 }
               },
               "encoding": {
-                "value": {
+                "CodeUser": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "Role": {
+                  "style": "form"
+                },
+                "Mail": {
+                  "style": "form"
+                },
+                "ArrImage": {
+                  "style": "form"
+                },
+                "fileImage": {
                   "style": "form"
                 }
               }

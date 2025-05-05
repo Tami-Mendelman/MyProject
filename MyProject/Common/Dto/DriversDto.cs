@@ -24,7 +24,7 @@ namespace Common.Dto
 
 
         ////תמונת פרופיל
-        public byte[] ArrImage { get; set; }
+        public byte[]? ArrImage { get; set; }
         public IFormFile? fileImage { get; set; }
 
         //למחוק?????

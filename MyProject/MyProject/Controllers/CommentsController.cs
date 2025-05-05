@@ -41,14 +41,20 @@ namespace MyProject.Controllers
 
         // PUT api/<CommentsController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromForm] string value)
+        public void Put(int id, [FromForm] CommentsDto dto)
         {
+            service.UpdateItem(id, dto);
         }
 
         // DELETE api/<CommentsController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            service.DeleteItem(id);
         }
+
+
+     
+        
     }
 }
