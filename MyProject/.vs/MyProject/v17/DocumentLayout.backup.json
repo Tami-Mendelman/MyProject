@@ -3,44 +3,20 @@
   "WorkspaceRootPath": "C:\\git\\MyProject\\MyProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9228CC6C-D8C3-4B0E-A568-0F1A59655250}|Common\\Common.csproj|c:\\git\\myproject\\myproject\\common\\dto\\driversdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9228CC6C-D8C3-4B0E-A568-0F1A59655250}|Common\\Common.csproj|solutionrelative:common\\dto\\driversdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\servicess\\commentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\servicess\\commentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|c:\\git\\myproject\\myproject\\repository\\entities\\drivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|solutionrelative:repository\\entities\\drivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\servicess\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\servicess\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9228CC6C-D8C3-4B0E-A568-0F1A59655250}|Common\\Common.csproj|c:\\git\\myproject\\myproject\\common\\dto\\destinationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9228CC6C-D8C3-4B0E-A568-0F1A59655250}|Common\\Common.csproj|solutionrelative:common\\dto\\destinationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|c:\\git\\myproject\\myproject\\repository\\entities\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A0B0E0-BE7D-468E-BDD0-0E13818A360B}|Repository\\Repository.csproj|solutionrelative:repository\\entities\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\controllers\\timetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\timetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\controllers\\destinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\destinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|c:\\git\\myproject\\myproject\\service\\servicess\\mymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96837B95-D0A5-4EE2-8086-9336173E8333}|Service\\Service.csproj|solutionrelative:service\\servicess\\mymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\controllers\\drivercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\drivercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|c:\\git\\myproject\\myproject\\myproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AFC70D9-E9BC-4449-BC8F-E296652E4111}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,8 +26,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -74,136 +54,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DriversDto.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Common\\Dto\\DriversDto.cs",
-              "RelativeDocumentMoniker": "Common\\Dto\\DriversDto.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Common\\Dto\\DriversDto.cs*",
-              "RelativeToolTip": "Common\\Dto\\DriversDto.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwBoAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MyMapper.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\MyMapper.cs",
+              "RelativeDocumentMoniker": "Service\\Servicess\\MyMapper.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\MyMapper.cs*",
+              "RelativeToolTip": "Service\\Servicess\\MyMapper.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:28:53.578Z",
+              "WhenOpened": "2025-05-06T19:51:06.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Drivers.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Drivers.cs",
-              "RelativeDocumentMoniker": "Repository\\Entities\\Drivers.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Drivers.cs",
-              "RelativeToolTip": "Repository\\Entities\\Drivers.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\UserService.cs",
+              "RelativeDocumentMoniker": "Service\\Servicess\\UserService.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\UserService.cs",
+              "RelativeToolTip": "Service\\Servicess\\UserService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:28:37.116Z",
+              "WhenOpened": "2025-05-06T19:43:48.518Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DestinationDto.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Common\\Dto\\DestinationDto.cs",
-              "RelativeDocumentMoniker": "Common\\Dto\\DestinationDto.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Common\\Dto\\DestinationDto.cs",
-              "RelativeToolTip": "Common\\Dto\\DestinationDto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CommentsService.cs",
+              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\CommentsService.cs",
+              "RelativeDocumentMoniker": "Service\\Servicess\\CommentsService.cs",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\Service\\Servicess\\CommentsService.cs",
+              "RelativeToolTip": "Service\\Servicess\\CommentsService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:23:20.699Z",
+              "WhenOpened": "2025-05-06T19:06:04.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Comments.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Comments.cs",
-              "RelativeDocumentMoniker": "Repository\\Entities\\Comments.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\Repository\\Entities\\Comments.cs",
-              "RelativeToolTip": "Repository\\Entities\\Comments.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:06:57.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "MyProject\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "MyProject\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAYwFgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:42:36.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DestinationController.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\DestinationController.cs",
-              "RelativeDocumentMoniker": "MyProject\\Controllers\\DestinationController.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\DestinationController.cs",
-              "RelativeToolTip": "MyProject\\Controllers\\DestinationController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:41:57.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "CommentsController.cs",
               "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\CommentsController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\CommentsController.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\CommentsController.cs",
-              "RelativeToolTip": "MyProject\\Controllers\\CommentsController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAArwC8AAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\CommentsController.cs*",
+              "RelativeToolTip": "MyProject\\Controllers\\CommentsController.cs*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwC0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:41:21.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DriverController.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\DriverController.cs",
-              "RelativeDocumentMoniker": "MyProject\\Controllers\\DriverController.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\DriverController.cs",
-              "RelativeToolTip": "MyProject\\Controllers\\DriverController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAswC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:40:37.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TimetableController.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\TimetableController.cs",
-              "RelativeDocumentMoniker": "MyProject\\Controllers\\TimetableController.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\TimetableController.cs",
-              "RelativeToolTip": "MyProject\\Controllers\\TimetableController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAwwDEAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:40:28.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "MyProject\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\git\\MyProject\\MyProject\\MyProject\\Controllers\\UserController.cs",
-              "RelativeToolTip": "MyProject\\Controllers\\UserController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwCwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T19:37:45.127Z",
+              "WhenOpened": "2025-05-06T19:10:54.695Z",
               "EditorCaption": ""
             }
           ]

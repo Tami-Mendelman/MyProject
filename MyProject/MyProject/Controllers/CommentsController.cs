@@ -18,25 +18,25 @@ namespace MyProject.Controllers
         }
         // GET: api/<CommentsController>   
         [HttpGet]
-        public IEnumerable<CommentsDto> Get()
+        public async Task<List<CommentsDto>> Get()
         {
-            return service.GetAll();
+            return await service.GetAll();
         }
 
 
         // GET api/<CommentsController>/5
         [HttpGet("{id}")]
-        public CommentsDto Get(int id)
+        public async Task< CommentsDto> Get(int id)
         {
-            return service.GetById(id);
+            return await service.GetById(id);
         }
 
         // POST api/<CommentsController>
         [HttpPost]
         [Authorize]
-        public CommentsDto Post([FromForm] CommentsDto value)
+        public async Task< CommentsDto> Post([FromForm] CommentsDto value)
         {
-            return service.AddItem(value);
+            return await service.AddItem(value);
         }
 
         // PUT api/<CommentsController>/5

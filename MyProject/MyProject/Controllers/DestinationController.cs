@@ -20,25 +20,25 @@ namespace MyProject.Controllers
         // GET: api/<DestinationController>
       
         [HttpGet]
-        public IEnumerable<DestinationDto> Get()
+        public async Task<List<DestinationDto>> Get()
         {
-            return service.GetAll();
+            return await service.GetAll();
         }
 
 
         // GET api/<DestinationController>/5
         [HttpGet("{id}")]
-        public DestinationDto Get(int id)
+        public async Task< DestinationDto> Get(int id)
         {
-            return service.GetById(id);
+            return await service.GetById(id);
         }
 
         // POST api/<DestinationController>
         [HttpPost]
         [Authorize]
-        public DestinationDto Post([FromForm] DestinationDto value)
+        public async Task< DestinationDto> Post([FromForm] DestinationDto value)
         {
-            return service.AddItem(value);
+            return await service.AddItem(value);
         }
 
         // PUT api/<DestinationController>/5

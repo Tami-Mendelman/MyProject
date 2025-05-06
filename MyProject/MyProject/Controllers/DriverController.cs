@@ -17,24 +17,25 @@ namespace MyProject.Controllers
         }
         // GET: api/<DriverController>
         [HttpGet]
-        public IEnumerable<DriversDto> Get()
+       
+        public async Task<List<DriversDto>> Get()
         {
-            return service.GetAll();
+            return await service.GetAll();
         }
 
         // GET api/<DriverController>/5
         [HttpGet("{id}")]
-        public DriversDto Get(int id)
+        public async Task< DriversDto> Get(int id)
         {
-            return service.GetById(id);
+            return await service.GetById(id);
         }
 
         // POST api/<DriverController>
         [HttpPost]
-        public DriversDto Post([FromForm] DriversDto drivers)
+        public async Task< DriversDto> Post([FromForm] DriversDto drivers)
         {
             UploadImage(drivers.fileImage);
-            return service.AddItem(drivers);
+            return await service.AddItem(drivers);
         }
 
         // PUT api/<DriverController>/5

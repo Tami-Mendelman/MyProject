@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,25 +19,25 @@ namespace MyProject.Controllers
         }
         // GET: api/<TimetableController>
         [HttpGet]
-        public IEnumerable<TimetableDto> Get()
+        public async Task<IEnumerable<TimetableDto>> Get()
         {
-            return service.GetAll();
+            return await service.GetAll();
         }
 
 
         // GET api/<TimetableController>/5
         [HttpGet("{id}")]
-        public TimetableDto Get(int id)
+        public async Task< TimetableDto> Get(int id)
         {
-            return service.GetById(id);
+            return await service.GetById(id);
         }
 
         // POST api/<TimetableController>
         [HttpPost]
         [Authorize]
-        public TimetableDto Post([FromForm] TimetableDto value)
+        public  async Task<TimetableDto> Post([FromForm] TimetableDto value)
         {
-            return service.AddItem(value);
+            return await service.AddItem(value);
         }
 
         // PUT api/<TimetableController>/5

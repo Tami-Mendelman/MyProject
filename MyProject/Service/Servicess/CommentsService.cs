@@ -20,29 +20,29 @@ namespace Service.Servicess
             this.repository = repository;
             this.mapper = mapper;
         }
-        public CommentsDto AddItem(CommentsDto item)
+        public async Task<CommentsDto> AddItem(CommentsDto item)
         {
-            return mapper.Map<Comments, CommentsDto>(repository.AddItem(mapper.Map<CommentsDto, Comments>(item)));
+            return mapper.Map<Comments, CommentsDto>(await repository.AddItem(mapper.Map<CommentsDto, Comments>(item)));
         }
 
-        public void DeleteItem(int id)
+        public async Task DeleteItem(int id)
         {
-            repository.DeleteItem(id);
+           await repository.DeleteItem(id);
         }
 
-        public List<CommentsDto> GetAll()
+        public async Task< List<CommentsDto>> GetAll()
         {
-            return mapper.Map<List<Comments>, List<CommentsDto>>(repository.GetAll());
+            return mapper.Map<List<Comments>, List<CommentsDto>>(await repository.GetAll());
         }
 
-        public CommentsDto GetById(int id)
+        public async Task< CommentsDto> GetById(int id)
         {
-            return mapper.Map<Comments, CommentsDto>(repository.GetById(id));
+            return mapper.Map<Comments, CommentsDto>(await repository.GetById(id));
         }
 
-        public void UpdateItem(int id, CommentsDto item)
+        public async Task UpdateItem(int id, CommentsDto item)
         {
-            repository.UpdateItem(id, mapper.Map<CommentsDto, Comments>(item));
+          await  repository.UpdateItem(id, mapper.Map<CommentsDto, Comments>(item));
         }
     }
 }

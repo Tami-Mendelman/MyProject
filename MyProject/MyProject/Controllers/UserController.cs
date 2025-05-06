@@ -20,26 +20,26 @@ namespace MyProject.Controllers
         // GET: api/<UserController>
        
         [HttpGet]
-        public IEnumerable<UserDto> Get()
+        public async Task< IEnumerable<UserDto>> Get()
         {
-            return service.GetAll();
+            return await service.GetAll();
         }
 
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public UserDto Get(int id)
+        public async Task< UserDto> Get(int id)
         {
-            return service.GetById(id);
+            return await service.GetById(id);
         }
 
         // POST api/<UserController>
         [HttpPost]
-        public UserDto Post([FromForm] UserDto user)
+        public async Task< UserDto> Post([FromForm] UserDto user)
         {
             UploadImage(user.fileImage);
 
-            return service.AddItem(user);
+            return await service.AddItem(user);
         }
 
         // PUT api/<UserController>/5
