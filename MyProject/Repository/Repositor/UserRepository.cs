@@ -1,4 +1,5 @@
-﻿using Repository.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository.Interfaces;
 using Respository.Entities;
 using System;
 using System.Collections.Generic;
@@ -18,39 +19,39 @@ namespace Repository.Repositor
         }
 
 
-        public User AddItem(User item)
+        public async Task< User> AddItem(User item)
         {
-            this.context.Users.Add(item);
-            this.context.Save();
+           await this.context.Users.AddAsync(item);
+          await  this.context.Save();
             return item;
         }
 
-        public void DeleteItem(int id)
+        public async Task DeleteItem(int id)
         {
-            this.context.Users.Remove(GetById(id));
-            this.context.Save();
+            this.context.Users.Remove( await GetById(id));
+          await  this.context.Save();
         }
 
-        public List<User> GetAll()
+        public async Task< List<User>> GetAll()
         {
-            return context.Users.ToList();
+            return await context.Users.ToListAsync();
         }
 
-        public User GetById(int CodeUser)
+        public async Task< User> GetById(int CodeUser)
         {
-            return context.Users.FirstOrDefault(x => x.CodeUser == CodeUser);
+            return await context.Users.FirstOrDefaultAsync(x => x.CodeUser == CodeUser);
         }
 
-        public void UpdateItem(int id, User item)
+        public async Task UpdateItem(int id, User item)
         {
-            var user = GetById(id);
+            var user =await GetById(id);
             user.Name = item.Name;
             user.Destination = item.Destination;
             user.Password = item.Password;
             user.Role = item.Role;
             user.Mail = item.Mail;
             user.Image = item.Image;
-            context.Save();
+          await  context.Save();
         }
     }
 }

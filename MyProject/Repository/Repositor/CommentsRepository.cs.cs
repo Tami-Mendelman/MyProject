@@ -1,4 +1,5 @@
-﻿using Repository.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository.Interfaces;
 using Respository.Entities;
 using System;
 using System.Collections.Generic;
@@ -17,36 +18,36 @@ namespace Repository.Repositor
         }
 
 
-        public Comments AddItem(Comments item)
+        public async Task<Comments> AddItem(Comments item)
         {
-            this.context.Comment.Add(item);
-            this.context.Save();
+          await  this.context.Comment.AddAsync(item);
+            await this.context.Save();
             return item;
         }
 
-        public void DeleteItem(int id)
+        public async Task DeleteItem(int id)
         {
-            this.context.Comment.Remove(GetById(id));
-            this.context.Save();
+            this.context.Comment.Remove(await GetById(id));
+           await this.context.Save();
         }
 
-        public List<Comments> GetAll()
+        public async Task< List<Comments>> GetAll()
         {
-            return context.Comment.ToList();
+            return await context.Comment.ToListAsync();
         }
 
-        public Comments GetById(int id)
+        public async Task< Comments> GetById(int id)
         {
-            return context.Comment.FirstOrDefault(x => x.Id == id);
+            return await context.Comment.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public void UpdateItem(int id, Comments item)
+        public async Task UpdateItem(int id, Comments item)
         {
-            var comments = GetById(id);
+            var comments =await GetById(id);
             comments.DriversList = item.DriversList;
             comments.Description = item.Description;
             comments.User = item.User;
-            context.Save();
+          await  context.Save();
         }
     }
 }

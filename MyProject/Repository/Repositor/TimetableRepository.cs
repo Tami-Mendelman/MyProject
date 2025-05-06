@@ -1,4 +1,5 @@
-﻿using Repository.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository.Interfaces;
 using Respository.Entities;
 using System;
 using System.Collections.Generic;
@@ -17,32 +18,32 @@ namespace Repository.Repositor
         }
 
 
-        public Timetable AddItem(Timetable item)
+        public async Task< Timetable> AddItem(Timetable item)
         {
-            this.context.Timetables.Add(item);
-            this.context.Save();
+           await this.context.Timetables.AddAsync(item);
+          await  this.context.Save();
             return item;
         }
 
-        public void DeleteItem(int id)
+        public async Task DeleteItem(int id)
         {
-            this.context.Timetables.Remove(GetById(id));
-            this.context.Save();
+            this.context.Timetables.Remove( await GetById(id));
+           await this.context.Save();
         }
 
-        public List<Timetable> GetAll()
+        public async Task< List<Timetable>> GetAll()
         {
-            return context.Timetables.ToList();
+            return await context.Timetables.ToListAsync();
         }
 
-        public Timetable GetById(int id)
+        public async Task< Timetable> GetById(int id)
         {
-            return context.Timetables.FirstOrDefault(x => x.Id == id);
+            return await context.Timetables.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public void UpdateItem(int id, Timetable item)
+        public async Task UpdateItem(int id, Timetable item)
         {
-            var timetable = GetById(id);
+            var timetable =await GetById(id);
             timetable.Drivers = item.Drivers;
             timetable.Date = item.Date;
             timetable.FromHour = item.FromHour;
@@ -50,7 +51,7 @@ namespace Repository.Repositor
             timetable.Source = item.Source;
             timetable.Destination = item.Destination;
             timetable.Km = item.Km;
-            context.Save();
+           await context.Save();
         }
     }
 }

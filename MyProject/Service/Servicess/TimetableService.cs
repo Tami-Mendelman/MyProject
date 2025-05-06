@@ -21,29 +21,29 @@ namespace Service.Servicess
             this.mapper = mapper;
         }
 
-        public TimetableDto AddItem(TimetableDto item)
+        public async Task< TimetableDto> AddItem(TimetableDto item)
         {
-            return mapper.Map<Timetable, TimetableDto>(repository.AddItem(mapper.Map<TimetableDto, Timetable>(item)));
+            return mapper.Map<Timetable, TimetableDto>(await repository.AddItem(mapper.Map<TimetableDto, Timetable>(item)));
         }
 
-        public void DeleteItem(int id)
+        public async Task DeleteItem(int id)
         {
-            repository.DeleteItem(id);
+           await repository.DeleteItem(id);
         }
 
-        public List<TimetableDto> GetAll()
+        public async Task< List<TimetableDto>> GetAll()
         {
-            return mapper.Map<List<Timetable>, List<TimetableDto>>(repository.GetAll());
+            return mapper.Map<List<Timetable>, List<TimetableDto>>(await repository.GetAll());
         }
 
-        public TimetableDto GetById(int id)
+        public async Task< TimetableDto> GetById(int id)
         {
-            return mapper.Map<Timetable, TimetableDto>(repository.GetById(id));
+            return mapper.Map<Timetable, TimetableDto>(await repository.GetById(id));
         }
 
-        public void UpdateItem(int id, TimetableDto item)
+        public async Task UpdateItem(int id, TimetableDto item)
         {
-            repository.UpdateItem(id, mapper.Map<TimetableDto, Timetable>(item));
+          await  repository.UpdateItem(id, mapper.Map<TimetableDto, Timetable>(item));
         }
     }
 }

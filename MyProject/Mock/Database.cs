@@ -20,17 +20,10 @@ namespace Mock
 
         public DbSet<User> Users { get; set; }
 
-        public void Save()
-        {
-            try
-            {
-                SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("שגיאה בשמירה: " + ex.Message);
-                throw;
-            }
+        public async Task Save()
+        {          
+             await   SaveChangesAsync();
+
         }
 
 

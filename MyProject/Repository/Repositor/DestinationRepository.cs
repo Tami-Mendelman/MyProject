@@ -1,4 +1,5 @@
-﻿using Repository.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository.Interfaces;
 using Respository.Entities;
 using System;
 using System.Collections.Generic;
@@ -17,39 +18,40 @@ namespace Repository.Repositor
         }
 
 
-        public Destination AddItem(Destination item)
+        public async Task< Destination> AddItem(Destination item)
         {
-            this.context.Destinations.Add(item);
-            this.context.Save();
+          await  this.context.Destinations.AddAsync(item);
+          await  this.context.Save();
             return item;
         }
 
-        public void DeleteItem(int id)
+
+        public async Task DeleteItem(int id)
         {
-            this.context.Destinations.Remove(GetById(id));
-            this.context.Save();
+            this.context.Destinations.Remove( await GetById(id));
+          await  this.context.Save();
         }
 
-        public List<Destination> GetAll()
+        public async Task< List<Destination> >GetAll()
         {
-            return context.Destinations.ToList();
+            return await context.Destinations.ToListAsync();
         }
 
-        public Destination GetById(int id)
+        public async Task< Destination> GetById(int id)
         {
-            return context.Destinations.FirstOrDefault(x => x.Id == id);
+            return await context.Destinations.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public void UpdateItem(int id, Destination item)
+        public async Task UpdateItem(int id, Destination item)
         {
-            var destination = GetById(id);
+            var destination =await GetById(id);
             destination.User = item.User;
             destination.Source = item.Source;
             destination.Destinations = item.Destinations;
             destination.Date = item.Date;
             destination.Time = item.Time;
-            context.Save();
+           await context.Save();
         
-    }
+         }
     }
 }

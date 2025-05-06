@@ -20,29 +20,29 @@ namespace Service.Servicess
             this.repository = repository;
             this.mapper = mapper;
         }
-        public DestinationDto AddItem(DestinationDto item)
+        public async Task< DestinationDto> AddItem(DestinationDto item)
         {
-            return mapper.Map<Destination, DestinationDto>(repository.AddItem(mapper.Map<DestinationDto, Destination>(item)));
+            return mapper.Map<Destination, DestinationDto>(await repository.AddItem(mapper.Map<DestinationDto, Destination>(item)));
         }
 
-        public void DeleteItem(int id)
+        public async Task DeleteItem(int id)
         {
-            repository.DeleteItem(id);
+          await  repository.DeleteItem(id);
         }
 
-        public List<DestinationDto> GetAll()
+        public async Task< List<DestinationDto>> GetAll()
         {
-            return mapper.Map<List<Destination>, List<DestinationDto>>(repository.GetAll());
+            return mapper.Map<List<Destination>, List<DestinationDto>>(await repository.GetAll());
         }
 
-        public DestinationDto GetById(int id)
+        public async Task< DestinationDto> GetById(int id)
         {
-            return mapper.Map<Destination, DestinationDto>(repository.GetById(id));
+            return mapper.Map<Destination, DestinationDto>(await repository.GetById(id));
         }
 
-        public void UpdateItem(int id, DestinationDto item)
+        public async Task UpdateItem(int id, DestinationDto item)
         {
-            repository.UpdateItem(id, mapper.Map<DestinationDto, Destination>(item));
+           await repository.UpdateItem(id, mapper.Map<DestinationDto, Destination>(item));
         }
     }
 }

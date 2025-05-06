@@ -19,6 +19,6 @@ namespace Repository.Interfaces
         public DbSet<Timetable> Timetables { get; set; }
 
         public DbSet<User> Users { get; set; }
-        public void Save();
+        public Task Save();
     }
 }

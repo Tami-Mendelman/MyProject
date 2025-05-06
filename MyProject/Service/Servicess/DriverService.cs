@@ -21,29 +21,32 @@ namespace Service.Servicess
             this.mapper = mapper;
         }
 
-        DriversDto IService<DriversDto>.AddItem(DriversDto item)
+        public async Task<DriversDto> AddItem(DriversDto item)
         {
-            return mapper.Map<Drivers, DriversDto>(repository.AddItem(mapper.Map<DriversDto, Drivers>(item)));
+            return mapper.Map<Drivers, DriversDto>(await repository.AddItem(mapper.Map<DriversDto, Drivers>(item)));
         }
 
-        void IService<DriversDto>.DeleteItem(int id)
+        public async Task DeleteItem(int id)
         {
-            repository.DeleteItem(id);
+            await repository.DeleteItem(id);
         }
 
-        List<DriversDto> IService<DriversDto>.GetAll()
+        public async Task<List<DriversDto>> GetAll()
         {
-            return mapper.Map<List<Drivers>, List<DriversDto>>(repository.GetAll());
+            return mapper.Map<List<Drivers>, List<DriversDto>>(await repository.GetAll());
         }
 
-        DriversDto IService<DriversDto>.GetById(int id)
+
+        public async Task<DriversDto> GetById(int id)
         {
-            return mapper.Map<Drivers, DriversDto>(repository.GetById(id));
+            return mapper.Map<Drivers, DriversDto>(await repository.GetById(id));
         }
 
-        void IService<DriversDto>.UpdateItem(int id, DriversDto item)
+        public async Task UpdateItem(int id, DriversDto item)
         {
-            repository.UpdateItem(id, mapper.Map<DriversDto, Drivers>(item));
+            await repository.UpdateItem(id, mapper.Map<DriversDto, Drivers>(item));
         }
+
+        
     }
 }

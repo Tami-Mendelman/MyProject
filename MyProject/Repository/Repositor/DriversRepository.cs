@@ -1,4 +1,5 @@
-﻿using Repository.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository.Interfaces;
 using Respository.Entities;
 using System;
 using System.Collections.Generic;
@@ -17,32 +18,32 @@ namespace Repository.Repositor
         }
 
 
-        public Drivers AddItem(Drivers item)
+        public async Task< Drivers> AddItem(Drivers item)
         {
-            this.context.Driver.Add(item);
-            this.context.Save();
+            await this.context.Driver.AddAsync(item);
+           await  this.context.Save();
             return item;
         }
 
-        public void DeleteItem(int id)
+        public async Task DeleteItem(int id)
         {
-            this.context.Driver.Remove(GetById(id));
-            this.context.Save();
+            this.context.Driver.Remove( await GetById(id));
+          await  this.context.Save();
         }
 
-        public List<Drivers> GetAll()
+        public async Task< List<Drivers>> GetAll()
         {
-            return context.Driver.ToList();
+            return await context.Driver.ToListAsync();
         }
 
-        public Drivers GetById(int id)
+        public async Task< Drivers> GetById(int id)
         {
-            return context.Driver.FirstOrDefault(x => x.DriverCode == id);
+            return await context.Driver.FirstOrDefaultAsync(x => x.DriverCode == id);
         }
 
-        public void UpdateItem(int id, Drivers item)
+        public async Task UpdateItem(int id, Drivers item)
         {
-            var drivers = GetById(id);
+            var drivers = await GetById(id);
             drivers.Name = item.Name;
             drivers.Password = item.Password;
             drivers.Mail = item.Mail;
@@ -51,7 +52,7 @@ namespace Repository.Repositor
             drivers.NumberOfSeatsInTheCar = item.NumberOfSeatsInTheCar;
             drivers.Image = item.Image;
             drivers.timetables = item.timetables;
-        context.Save();
+            await context.Save();
 
         }
     }
