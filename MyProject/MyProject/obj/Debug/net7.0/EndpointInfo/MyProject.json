@@ -48,66 +48,26 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "Id": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "DriversList": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/DriversDto"
-                    }
-                  },
-                  "Description": {
-                    "type": "string"
-                  },
-                  "UserId": {
-                    "type": "integer",
-                    "format": "int32"
-                  }
-                }
-              },
-              "encoding": {
-                "Id": {
-                  "style": "form"
-                },
-                "DriversList": {
-                  "style": "form"
-                },
-                "Description": {
-                  "style": "form"
-                },
-                "UserId": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/CommentsDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommentsDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommentsDto"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/CommentsDto"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CommentsDto"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CommentsDto"
-                }
-              }
-            }
+            "description": "Success"
           }
         }
       }
@@ -178,11 +138,9 @@
                     "type": "integer",
                     "format": "int32"
                   },
-                  "DriversList": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/DriversDto"
-                    }
+                  "DriverCode": {
+                    "type": "integer",
+                    "format": "int32"
                   },
                   "Description": {
                     "type": "string"
@@ -197,7 +155,7 @@
                 "Id": {
                   "style": "form"
                 },
-                "DriversList": {
+                "DriverCode": {
                   "style": "form"
                 },
                 "Description": {
@@ -1691,12 +1649,9 @@
             "type": "integer",
             "format": "int32"
           },
-          "driversList": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DriversDto"
-            },
-            "nullable": true
+          "driverCode": {
+            "type": "integer",
+            "format": "int32"
           },
           "description": {
             "type": "string",

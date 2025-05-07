@@ -34,10 +34,15 @@ namespace Mock.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("DriverCode")
+                        .HasColumnType("int");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DriverCode");
 
                     b.HasIndex("UserId");
 
@@ -79,9 +84,6 @@ namespace Mock.Migrations
                     b.Property<bool>("Accessible")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("CommentsId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
@@ -104,8 +106,6 @@ namespace Mock.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("DriverCode");
-
-                    b.HasIndex("CommentsId");
 
                     b.ToTable("Driver");
                 });
@@ -174,11 +174,19 @@ namespace Mock.Migrations
 
             modelBuilder.Entity("Respository.Entities.Comments", b =>
                 {
+                    b.HasOne("Respository.Entities.Drivers", "Driver")
+                        .WithMany()
+                        .HasForeignKey("DriverCode")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Respository.Entities.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Driver");
 
                     b.Navigation("User");
                 });
@@ -194,13 +202,6 @@ namespace Mock.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Respository.Entities.Drivers", b =>
-                {
-                    b.HasOne("Respository.Entities.Comments", null)
-                        .WithMany("DriversList")
-                        .HasForeignKey("CommentsId");
-                });
-
             modelBuilder.Entity("Respository.Entities.Timetable", b =>
                 {
                     b.HasOne("Respository.Entities.Drivers", "Drivers")
@@ -210,11 +211,6 @@ namespace Mock.Migrations
                         .IsRequired();
 
                     b.Navigation("Drivers");
-                });
-
-            modelBuilder.Entity("Respository.Entities.Comments", b =>
-                {
-                    b.Navigation("DriversList");
                 });
 
             modelBuilder.Entity("Respository.Entities.Drivers", b =>

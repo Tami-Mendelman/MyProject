@@ -44,7 +44,7 @@ namespace Repository.Repositor
         public async Task UpdateItem(int id, Comments item)
         {
             var comments =await GetById(id);
-            comments.DriversList = item.DriversList;
+            comments.DriverCode = item.DriverCode;
             comments.Description = item.Description;
             comments.User = item.User;
           await  context.Save();

@@ -11,7 +11,8 @@ namespace Common.Dto
    public class CommentsDto
     {
         public int Id { get; set; }
-        public List<DriversDto> DriversList { get; set; }
+        //public List<DriversDto> DriversList { get; set; }
+        public int DriverCode { get; set; }
         public string Description { get; set; }
         
         public int UserId { get; set; }

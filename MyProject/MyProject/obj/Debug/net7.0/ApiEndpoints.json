@@ -28,37 +28,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "DriversList",
-        "Type": "System.Collections.Generic.List\u00601[[Common.Dto.DriversDto, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "UserId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "value",
+        "Type": "Common.Dto.CommentsDto",
+        "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Common.Dto.CommentsDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "MyProject.Controllers.CommentsController",
@@ -105,8 +80,8 @@
         "IsRequired": false
       },
       {
-        "Name": "DriversList",
-        "Type": "System.Collections.Generic.List\u00601[[Common.Dto.DriversDto, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Name": "DriverCode",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {

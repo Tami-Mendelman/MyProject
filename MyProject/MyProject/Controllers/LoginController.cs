@@ -108,11 +108,18 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyProject.Controllers
 {
     [Route("api/[controller]")]
+    //[Authorize]
     [ApiController]
+
+   
+   
+
+
     public class LoginController : ControllerBase
     {
         private readonly IService<UserDto> service;
@@ -143,18 +150,30 @@ namespace MyProject.Controllers
             return Ok(result);
         }
 
+        //[HttpPost("login")]
+        //public async Task<IActionResult> Login([FromForm] UserLogin value)
+        //{
+        //    var user = await Authenticate(value); // ✅ חייב להיות await כאן
+        //    if (user != null)
+        //    {
+        //        var token = Generate(user);
+        //        return Ok(token);
+        //    }
+
+        //    return Unauthorized("User not found");
+        //}
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromForm] UserLogin value)
         {
-            var user = await Authenticate(value); // ✅ חייב להיות await כאן
+            var user = await Authenticate(value);
             if (user != null)
             {
                 var token = Generate(user);
-                return Ok(token);
+                return Ok(new { token = token, userId = user.CodeUser });
             }
-
             return Unauthorized("User not found");
         }
+
 
         private string Generate(UserDto user)
         {

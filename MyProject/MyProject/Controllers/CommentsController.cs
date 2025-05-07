@@ -32,12 +32,29 @@ namespace MyProject.Controllers
         }
 
         // POST api/<CommentsController>
+        //[HttpPost]
+        //[Authorize]
+        //public async Task< CommentsDto> Post([FromBody] CommentsDto value)
+        //{
+        //    return await service.AddItem(value);
+        //}
         [HttpPost]
         [Authorize]
-        public async Task< CommentsDto> Post([FromForm] CommentsDto value)
+        public async Task<IActionResult> Post([FromBody] CommentsDto value)
         {
-            return await service.AddItem(value);
+            try
+            {
+                var result = await service.AddItem(value);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                var inner = ex.InnerException?.Message ?? "No inner exception";
+                return StatusCode(500, $"Server error: {ex.Message} → {inner}");
+            }
+
         }
+
 
         // PUT api/<CommentsController>/5
         [HttpPut("{id}")]
