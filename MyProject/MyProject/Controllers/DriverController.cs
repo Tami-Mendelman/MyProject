@@ -31,12 +31,19 @@ namespace MyProject.Controllers
         }
 
         // POST api/<DriverController>
+        //[HttpPost]
+        //public async Task< DriversDto> Post([FromForm] DriversDto drivers)
+        //{
+        //    UploadImage(drivers.fileImage);
+        //    return await service.AddItem(drivers);
+        //}
         [HttpPost]
-        public async Task< DriversDto> Post([FromForm] DriversDto drivers)
+        public async Task<DriversDto> Post([FromForm] DriversDto drivers)
         {
-            UploadImage(drivers.fileImage);
+            UploadImage(drivers.fileImage, drivers); // ✅
             return await service.AddItem(drivers);
         }
+
 
         // PUT api/<DriverController>/5
 
@@ -53,16 +60,35 @@ namespace MyProject.Controllers
             service.DeleteItem(id);
         }
 
-        
-        private void UploadImage(IFormFile file)
-        {
-            //ניתוב לתמונה
-            var path = Path.Combine(Environment.CurrentDirectory, "Images/", file.FileName);
-            using (var stream = new FileStream(path, FileMode.Create))
-            {
 
-                file.CopyTo(stream);
+        //private void UploadImage(IFormFile file)
+        //{
+        //    //ניתוב לתמונה
+        //    var path = Path.Combine(Environment.CurrentDirectory, "Images/", file.FileName);
+        //    using (var stream = new FileStream(path, FileMode.Create))
+        //    {
+
+        //        file.CopyTo(stream);
+        //    }
+        //}
+        private void UploadImage(IFormFile file, DriversDto driver)
+        {
+            if (file == null) return;
+
+            var path = Path.Combine(Environment.CurrentDirectory, "Images/", file.FileName);
+
+            using (var stream = new FileStream(path, FileMode.Create))
+            using (var readStream = file.OpenReadStream())
+            using (var memoryStream = new MemoryStream())
+            {
+                readStream.CopyTo(memoryStream);
+                memoryStream.Position = 0;
+                memoryStream.CopyTo(stream);
+
+                driver.ArrImage = memoryStream.ToArray(); // ✅ תמונה כ־byte[] ל־React
             }
         }
+
+
     }
 }

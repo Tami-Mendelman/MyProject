@@ -1,104 +1,123 @@
-﻿//using Common.Dto;
+﻿
+//using Common.Dto;
 //using Microsoft.AspNetCore.Mvc;
 //using Service.Interfaces;
 //using Microsoft.IdentityModel.Tokens;
-//using System.CodeDom.Compiler;
 //using System.IdentityModel.Tokens.Jwt;
 //using System.Security.Claims;
 //using System.Text;
-//using System.Threading.Tasks;
-//// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+//using Microsoft.AspNetCore.Authorization;
 
 //namespace MyProject.Controllers
 //{
 //    [Route("api/[controller]")]
+//    //[Authorize]
 //    [ApiController]
+
 //    public class LoginController : ControllerBase
 //    {
 //        private readonly IService<UserDto> service;
 //        private readonly IConfiguration config;
+
 //        public LoginController(IService<UserDto> service, IConfiguration config)
 //        {
 //            this.service = service;
 //            this.config = config;
 //        }
-//        // GET: api/<LoginController>
 
 //        [HttpGet]
-//        public async Task< IEnumerable<UserDto>> Get()
+//        public async Task<IEnumerable<UserDto>> Get()
 //        {
 //            return await service.GetAll();
 //        }
 
-
-//        // GET api/<LoginController>/5
 //        [HttpGet("{id}")]
 //        public string Get(int id)
 //        {
 //            return "value";
 //        }
 
-//        // POST api/<LoginController>
 //        [HttpPost]
-//        public void Post([FromForm] UserDto value)
+//        public async Task<IActionResult> Post([FromForm] UserDto value)
 //        {
-//            service.AddItem(value);
+//            var result = await service.AddItem(value);
+//            return Ok(result);
 //        }
+
+//        //[HttpPost("login")]
+//        //public async Task<IActionResult> Login([FromForm] UserLogin value)
+//        //{
+//        //    var user = await Authenticate(value); // ✅ חייב להיות await כאן
+//        //    if (user != null)
+//        //    {
+//        //        var token = Generate(user);
+//        //        return Ok(token);
+//        //    }
+
+//        //    return Unauthorized("User not found");
+//        //}
 //        [HttpPost("login")]
-//        public string Login([FromForm] UserLogin value)
+//        public async Task<IActionResult> Login([FromForm] UserLogin value)
 //        {
-//            var user = Authenticate(value);
+//            var user = await Authenticate(value);
 //            if (user != null)
 //            {
 //                var token = Generate(user);
-//                return token;
+
+//                return Ok(new
+//                {
+//                    token = token,
+//                    userId = user.CodeUser,
+//                    role = user.Role // זה מאפשר לצד לקוח לנווט בהתאם
+//                });
+
 //            }
-//            return "user not found";
+//            return Unauthorized("User not found");
 //        }
+
+
 //        private string Generate(UserDto user)
 //        {
-
 //            var securitykey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"]));
 //            var credentials = new SigningCredentials(securitykey, SecurityAlgorithms.HmacSha256);
-//            var claims = new[] {
-//            new Claim(ClaimTypes.NameIdentifier,user.Name),
-//            new Claim(ClaimTypes.Email,user.Mail),
-//            new Claim(ClaimTypes.PostalCode,user.Password),
-//            new Claim(ClaimTypes.Role,user.Role),
-//            //new Claim(ClaimTypes.GivenName,user.Name)
+
+//            var claims = new[]
+//            {
+//                new Claim(ClaimTypes.NameIdentifier, user.Name),
+//                new Claim(ClaimTypes.Email, user.Mail),
+//                new Claim("Password", user.Password),
+//                new Claim(ClaimTypes.Role, user.Role),
 //            };
-//            var token = new JwtSecurityToken(config["Jwt:Issuer"], config["Jwt:Audience"],
+
+//            var token = new JwtSecurityToken(
+//                config["Jwt:Issuer"],
+//                config["Jwt:Audience"],
 //                claims,
 //                expires: DateTime.Now.AddMinutes(15),
 //                signingCredentials: credentials);
+
 //            return new JwtSecurityTokenHandler().WriteToken(token);
 //        }
-
 
 //        private async Task<UserDto> Authenticate(UserLogin value)
 //        {
 //            var users = await service.GetAll();
-//            return  users.FirstOrDefault(x => x.Password == value.Password && x.Name == value.Name);
+//            return users.FirstOrDefault(x => x.Password == value.Password && x.Name == value.Name);
 //        }
 
-
-//        // PUT api/<LoginController>/5
 //        [HttpPut("{id}")]
-//        public void Put(int id, [FromForm] UserDto dto)
+//        public async Task<IActionResult> Put(int id, [FromForm] UserDto dto)
 //        {
-
-//            service.UpdateItem(id,dto);
+//            await service.UpdateItem(id, dto);
+//            return NoContent();
 //        }
-//        // DELETE api/<LoginController>/5
+
 //        [HttpDelete("{id}")]
-//        public void Delete(int id)
+//        public async Task<IActionResult> Delete(int id)
 //        {
-//            service.DeleteItem(id);
+//            await service.DeleteItem(id);
+//            return NoContent();
 //        }
-
-
-
-
 //    }
 //}
 using Common.Dto;
@@ -108,114 +127,111 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.AspNetCore.Authorization;
 
 namespace MyProject.Controllers
 {
     [Route("api/[controller]")]
-    //[Authorize]
     [ApiController]
-
-   
-   
-
-
     public class LoginController : ControllerBase
     {
-        private readonly IService<UserDto> service;
-        private readonly IConfiguration config;
+        private readonly IService<UserDto> _userService;
+        private readonly IService<DriversDto> _driverService;
+        private readonly IConfiguration _config;
 
-        public LoginController(IService<UserDto> service, IConfiguration config)
+        public LoginController(IService<UserDto> userService, IService<DriversDto> driverService, IConfiguration config)
         {
-            this.service = service;
-            this.config = config;
+            _userService = userService;
+            _driverService = driverService;
+            _config = config;
         }
 
-        [HttpGet]
-        public async Task<IEnumerable<UserDto>> Get()
-        {
-            return await service.GetAll();
-        }
-
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Post([FromForm] UserDto value)
-        {
-            var result = await service.AddItem(value);
-            return Ok(result);
-        }
-
-        //[HttpPost("login")]
-        //public async Task<IActionResult> Login([FromForm] UserLogin value)
-        //{
-        //    var user = await Authenticate(value); // ✅ חייב להיות await כאן
-        //    if (user != null)
-        //    {
-        //        var token = Generate(user);
-        //        return Ok(token);
-        //    }
-
-        //    return Unauthorized("User not found");
-        //}
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromForm] UserLogin value)
         {
-            var user = await Authenticate(value);
+            var user = await AuthenticateUser(value);
             if (user != null)
             {
-                var token = Generate(user);
-                return Ok(new { token = token, userId = user.CodeUser });
+                var token = Generate(user.Name, user.Mail, user.Password, "User");
+                return Ok(new { token = token, userId = user.CodeUser, role = "User" });
             }
+
+            var driver = await AuthenticateDriver(value);
+            if (driver != null)
+            {
+                var token = Generate(driver.Name, driver.Mail, driver.Password, "Driver");
+                return Ok(new { token = token, userId = driver.DriverCode, role = "Driver" });
+            }
+
             return Unauthorized("User not found");
         }
 
-
-        private string Generate(UserDto user)
+        private async Task<UserDto?> AuthenticateUser(UserLogin value)
         {
-            var securitykey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"]));
+            var users = await _userService.GetAll();
+            return users.FirstOrDefault(x => x.Name == value.Name && x.Password == value.Password);
+        }
+
+        private async Task<DriversDto?> AuthenticateDriver(UserLogin value)
+        {
+            var drivers = await _driverService.GetAll();
+            return drivers.FirstOrDefault(x => x.Name == value.Name && x.Password == value.Password);
+        }
+
+        private string Generate(string name, string mail, string password, string role)
+        {
+            var securitykey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securitykey, SecurityAlgorithms.HmacSha256);
 
             var claims = new[]
             {
-                new Claim(ClaimTypes.NameIdentifier, user.Name),
-                new Claim(ClaimTypes.Email, user.Mail),
-                new Claim("Password", user.Password),
-                new Claim(ClaimTypes.Role, user.Role),
+                new Claim(ClaimTypes.NameIdentifier, name),
+                new Claim(ClaimTypes.Email, mail),
+                new Claim("Password", password),
+                new Claim(ClaimTypes.Role, role),
             };
 
             var token = new JwtSecurityToken(
-                config["Jwt:Issuer"],
-                config["Jwt:Audience"],
+                _config["Jwt:Issuer"],
+                _config["Jwt:Audience"],
                 claims,
                 expires: DateTime.Now.AddMinutes(15),
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-
-        private async Task<UserDto> Authenticate(UserLogin value)
+        [HttpGet]
+        public async Task<IEnumerable<UserDto>> Get()
         {
-            var users = await service.GetAll();
-            return users.FirstOrDefault(x => x.Password == value.Password && x.Name == value.Name);
+            return await _userService.GetAll();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<UserDto?> Get(int id)
+        {
+            var users = await _userService.GetAll();
+            return users.FirstOrDefault(u => u.CodeUser == id);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Post([FromForm] UserDto value)
+        {
+            var result = await _userService.AddItem(value);
+            return Ok(result);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromForm] UserDto dto)
         {
-            await service.UpdateItem(id, dto);
+            await _userService.UpdateItem(id, dto);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await service.DeleteItem(id);
+            await _userService.DeleteItem(id);
             return NoContent();
         }
+
     }
 }

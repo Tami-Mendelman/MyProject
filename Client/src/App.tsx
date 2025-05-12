@@ -9,6 +9,9 @@ import Comments from "./pages/Comments";
 import Timetable from "./pages/Timetable";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./ProtectedRoute";
+import DriverDashboard from "./pages/DriverDashboard";
+import UserDashboard from "./pages/UserDashboard";
+
 
 import Navbar from "./Navbar";
 
@@ -25,6 +28,9 @@ function App() {
         <Route path="/comments" element={<ProtectedRoute><Comments /></ProtectedRoute>} />
         <Route path="/timetable" element={<ProtectedRoute><Timetable /></ProtectedRoute>} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/driver-dashboard" element={<ProtectedRoute><DriverDashboard /></ProtectedRoute>} />
+<Route path="/user-dashboard" element={<ProtectedRoute><UserDashboard /></ProtectedRoute>} />
+
       </Routes>
     </Router>
   );

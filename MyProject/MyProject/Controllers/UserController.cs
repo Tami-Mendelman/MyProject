@@ -34,16 +34,42 @@ namespace MyProject.Controllers
         }
 
         // POST api/<UserController>
-        [HttpPost]
-        public async Task< UserDto> Post([FromForm] UserDto user)
-        {
-            UploadImage(user.fileImage);
 
-            return await service.AddItem(user);
+        //[HttpPost]
+        //public async Task<ActionResult<UserDto>> Post([FromForm] UserDto user)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        var errors = ModelState.Values
+        //            .SelectMany(v => v.Errors)
+        //            .Select(e => e.ErrorMessage)
+        //            .ToList();
+
+        //        // מחזיר תשובה עם כל השגיאות שקרו בבקשה
+        //        return BadRequest(new { message = "Model validation failed", errors });
+        //    }
+
+        //    UploadImage(user.fileImage);
+
+        //    var result = await service.AddItem(user);
+        //    return Ok(result);
+        //}
+        [HttpPost]
+        public async Task<ActionResult<UserDto>> Post([FromForm] UserDto user)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            UploadImage(user.fileImage, user); // ✅
+
+            var result = await service.AddItem(user);
+            return Ok(result);
         }
 
+
+
         // PUT api/<UserController>/5
-        
+
         [HttpPut("{id}")]
         public void Put(int id, [FromForm] UserDto dto)
         {
@@ -57,16 +83,36 @@ namespace MyProject.Controllers
             service.DeleteItem(id);
         }
 
-       
-        private void UploadImage(IFormFile file)
-        {
-            //ניתוב לתמונה
-            var path = Path.Combine(Environment.CurrentDirectory, "Images/", file.FileName);
-            using (var stream = new FileStream(path, FileMode.Create))
-            {
 
-                file.CopyTo(stream);
+        //private void UploadImage(IFormFile file)
+        //{
+        //    //ניתוב לתמונה
+        //    var path = Path.Combine(Environment.CurrentDirectory, "Images/", file.FileName);
+        //    using (var stream = new FileStream(path, FileMode.Create))
+        //    {
+
+        //        file.CopyTo(stream);
+        //    }
+        //}
+        private void UploadImage(IFormFile file, UserDto user)
+        {
+            if (file == null) return;
+
+            var path = Path.Combine(Environment.CurrentDirectory, "Images/", file.FileName);
+
+            using (var stream = new FileStream(path, FileMode.Create))
+            using (var readStream = file.OpenReadStream())
+            using (var memoryStream = new MemoryStream())
+            {
+                // העתקה כפולה לשני יעדים: לקובץ וגם ל־ArrImage
+                readStream.CopyTo(memoryStream); // שומר ל־MemoryStream
+                memoryStream.Position = 0;       // מחזיר להתחלה
+                memoryStream.CopyTo(stream);     // שומר לקובץ
+
+                user.ArrImage = memoryStream.ToArray(); // שומר ל־DTO
             }
         }
+
+
     }
 }
